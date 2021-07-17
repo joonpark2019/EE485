@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for file in *
+do
+    if grep -l ps $file
+    then
+        echo $file
+    fi
+done
+exit 0
